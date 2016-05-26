@@ -18,20 +18,20 @@ router.post('/items', function(req, res) {
     });
 });
 
-router.put('/items/:id', function(req, res) {
-    Item.update(req.body.name, function(item) {
-        res.status(200).json(item);
-    }, function(err) {
-        res.status(400).json(err);
-    });
-});
-
 router.delete('/items/:id', function(req, res) {
     Item.delete(req.params.id, function(err) {
         if (err || !Item) {
         res.status(400).json(err)};
     }, function(item) {
         res.status(200).json(item);
+    });
+});
+
+router.put('/items/:id', function(req, res) {
+    Item.update(req.params.id, req.body.name, function(item) {
+        res.status(200).json(item);
+    }, function(err) {
+        res.status(400).json(err);
     });
 });
 
