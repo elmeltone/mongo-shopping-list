@@ -27,7 +27,7 @@ router.put('/items/:id', function(req, res) {
 });
 
 router.delete('/items/:id', function(req, res) {
-    Item.delete(req.body.name, function(err) {
+    Item.delete(req.params.id, function(err) {
         if (err || !Item) {
         res.status(400).json(err)};
     }, function(item) {

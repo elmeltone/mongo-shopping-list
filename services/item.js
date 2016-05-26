@@ -32,12 +32,15 @@ exports.update = function(name, callback, errback) {
     });
 };
 
-exports.delete = function(name, errback, callback) {
-    Item.findOneAndRemove({_name: name}, function(err, items) {
+exports.delete = function(id, errback, callback) {
+    Item.findByIdAndRemove(id, function(err, item) {
         if (err) {
             errback(err);
             return;
+        } else if (err==null && item==null){
+            errback(err)
+            return;
         }
-        callback(items);
+        callback(item);
     });
 };
