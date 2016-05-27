@@ -4,7 +4,7 @@
   "description": "Shopping List App with persistence via MongoDB",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter spec test"
   },
   "author": "Michael J Melton",
   "license": "ISC",
