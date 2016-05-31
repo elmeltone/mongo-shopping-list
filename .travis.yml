@@ -8,3 +8,10 @@ addons:
     - mongodb-3.2-precise
     packages:
     - mongodb-org-server
+deploy:
+  provider: heroku
+  api_key:
+    secure: X4g03Qqu7iH4/rxWtDgW7fa3sElUpdfEO2GjQDzUb8iHIiVQtXoY5x3gmH5aB1RuMftFzoBZ+EKz9Umd6iCtoMgdOf41CBrbuJ4tKTIsBvq4nWUd4r4hPu9E0Rv1oRF9TE0V2TcOCDiGnd9K5eIsx0wsZO46ZDWhIgbRROZykHpz8S8oZRElIc5x6O0IbQyAEuL/5lIDf1U8ViJW+fMvD1/glVksPrJ93o7We1PSAgJSMFABKp2SbI+y1B7I7EzTSoYPXZtupPScrqdE6xfa5AMZqCozeVq0qU0NTtrA9fy34T2YmhqU/obOjTYyO9zhj97/a2xnhz9ntgMnj4UC90u/kcMx/0xxxVB6aOJkf1Ys56KOzk4N1WV5uwmAsWyDFxgO0HWOqfneL8bjHgt+NmN8tJuc3FE1NLtQIEPLLhtl1x2m71nLRW9Vr374d4LiWz/ohz37HtsonAxTGL1qHgpXjyvwuQO1j41ynfZF6MvxQ+N7Zu9SpCQ7Ar1Ebr86EDjBCl8gTnnA1EhecEbWEHFeS0z+tCHhC3MUSxnl9I5FECO0taDZkCHwc8FHBoNn8rg1VElKOPtN270eDEKU8TzvEkOhH6ES9bU6TFnobydbzG2Wdq7xot9ZjR6Rs+KEVFShTJLsaG6Ln0R31EF7p2SdLZS/ZJwIcjUKkojV7dM=
+  app: gentle-escarpment-49144
+  on:
+    repo: elmeltone/mongo-shopping-list
