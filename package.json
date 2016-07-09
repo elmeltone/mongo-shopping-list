@@ -4,7 +4,10 @@
   "description": "Shopping List App with persistence via MongoDB",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter spec test"
+    "build": "npm run build:sass",
+    "build:sass": "node-sass sass/main.scss public/main.css",
+    "watch": "npm run watch:sass",
+    "watch:sass": "nodemon -e scss -w sass -x 'npm run build:sass'"
   },
   "author": "Michael J Melton",
   "license": "ISC",
@@ -16,6 +19,8 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "chai-http": "^2.0.1",
-    "mocha": "^2.5.3"
+    "mocha": "^2.5.3",
+    "node-sass": "^3.8.0",
+    "nodemon": "^1.9.2"
   }
 }
