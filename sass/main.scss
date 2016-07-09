@@ -43,7 +43,7 @@ $other: #F5F6D4;
 body {
     font-size: 1em;
     color: darken($emphasis, 15%);
-    background-color: $background;
+    background-color: $other;
 }
 .light {
     color: lighten($emphasis, 25%);
