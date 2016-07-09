@@ -13,14 +13,14 @@
 
 body {
   font-size: 1em;
-  color: #5b9610;
-  background-color: #F5F6D4; }
+  color: #85DB18;
+  background-color: #fafae9; }
 
 .light {
-  color: #c0f181; }
+  color: #a9ec53; }
 
 a, a:active, a:hover, a:visited {
-  color: #c0f181; }
+  color: #a9ec53; }
 
 div#main {
   display: flex;
@@ -38,13 +38,13 @@ input {
     -moz-box-shadow: 0 0 15px #85DB18;
     box-shadow: 0 0 15px #85DB18; }
   input::-webkit-input-placeholder {
-    color: #c0f181; }
+    color: #a9ec53; }
   input:-moz-placeholder {
-    color: #c0f181; }
+    color: #a9ec53; }
   input::-moz-placeholder {
-    color: #c0f181; }
+    color: #a9ec53; }
   input:-ms-input-placeholder {
-    color: #c0f181; }
+    color: #a9ec53; }
 
 div > input {
   width: 200px; }
@@ -65,7 +65,7 @@ ul {
 li {
   width: 200px;
   list-style-type: none;
-  color: #85DB18;
+  color: #5b9610;
   background-color: #FFFFFF; }
 
 div.delete {

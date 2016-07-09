@@ -42,14 +42,14 @@ $other: #F5F6D4;
 }
 body {
     font-size: 1em;
-    color: darken($emphasis, 15%);
-    background-color: $other;
+    color: $emphasis;
+    background-color: lighten($other, 5%);
 }
 .light {
-    color: lighten($emphasis, 25%);
+    color: lighten($emphasis, 15%);
 }
 a, a:active, a:hover, a:visited {
-    color: lighten($emphasis, 25%);
+    color: lighten($emphasis, 15%);
 }
 div#main {
     display: flex;
@@ -66,7 +66,7 @@ input {
         @include box-shadow(0, 0, 15px, $emphasis);
     }
     @include placeholder {
-        color: lighten($emphasis, 25%);
+        color: lighten($emphasis, 15%);
     }
 }
 div>input {
@@ -88,7 +88,7 @@ ul {
 li {
     width: 200px;
     list-style-type: none;
-    color: $emphasis;
+    color: darken($emphasis, 15%);
     background-color: $background;
 }
 div.delete {
