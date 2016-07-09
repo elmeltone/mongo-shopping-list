@@ -17,10 +17,10 @@ body {
   background-color: #fafae9; }
 
 .light {
-  color: #a9ec53; }
+  color: #85DB18; }
 
 a, a:active, a:hover, a:visited {
-  color: #a9ec53; }
+  color: #85DB18; }
 
 div#main {
   display: flex;
@@ -38,13 +38,13 @@ input {
     -moz-box-shadow: 0 0 15px #85DB18;
     box-shadow: 0 0 15px #85DB18; }
   input::-webkit-input-placeholder {
-    color: #a9ec53; }
+    color: #85DB18; }
   input:-moz-placeholder {
-    color: #a9ec53; }
+    color: #85DB18; }
   input::-moz-placeholder {
-    color: #a9ec53; }
+    color: #85DB18; }
   input:-ms-input-placeholder {
-    color: #a9ec53; }
+    color: #85DB18; }
 
 div > input {
   width: 200px; }
